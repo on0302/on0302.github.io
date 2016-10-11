@@ -1,0 +1,175 @@
+.mac-model-nav{
+    height: 110px;
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.macbook{
+    float: left;
+    border: 0px solid #000;
+    width: 110px;
+    height: 110px;
+    margin-left: 320px;
+}
+
+.macbook img{
+    margin-top: 14px;
+    margin-left: 24px;
+}
+
+.macbook a{
+    float: left;
+    margin-top: 4px;
+    margin-left: 27px;
+    font-family: 'myriad';
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.macbook a:hover{
+    opacity: 0.7;
+}
+
+.macbook-air{
+    float: left;
+    border: 0px solid #000;
+    width: 110px;
+    height: 110px;
+    margin-left: 20px;
+}
+
+.macbook-air img{
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+.macbook-air a{
+    float: left;
+    margin-top: 2.5px;
+    margin-left: 18px;
+    font-family: 'myriad';
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.macbook-air a:hover{
+    opacity: 0.7;
+}
+
+.macbook-pro{
+    float: left;
+    border: 0px solid #000;
+    width: 110px;
+    height: 110px;
+    margin-left: 20px;
+}
+
+.macbook-pro img{
+    margin-left: 20px;
+}
+
+.macbook-pro a{
+    float: left;
+    margin-left: 17px;
+    font-family: 'myriad';
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.macbook-pro a:hover{
+    opacity: 0.7;
+}
+
+.imac{
+    float: left;
+    border: 0px solid #000;
+    width: 110px;
+    height: 110px;
+    margin-left: 20px;
+}
+
+.imac img{
+    margin-top: 14px;
+    margin-left: 28px;
+}
+
+.imac a{
+    float: left;
+    margin-left: 41px;
+    margin-top: 1.5px;
+    font-family: 'myriad';
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.imac a:hover{
+    opacity: 0.7;
+}
+
+.macpro{
+    float: left;
+    border: 0px solid #000;
+    width: 110px;
+    height: 110px;
+}
+
+.macpro img{
+    margin-top: 9.5px;
+    margin-left: 42.5px;
+}
+
+.macpro a{
+    float: left;
+    margin-left: 30px;
+    margin-top: 7px;
+    font-family: 'myriad';
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.macpro a:hover{
+    opacity: 0.7;
+}
+
+.macmini{
+    float: left;
+    border: 0px solid #000;
+    width: 110px;
+    height: 110px;
+}
+
+.macmini img{
+    margin-top: 24.5px;
+    margin-left: 39px;
+}
+
+.macmini a{
+    float: left;
+    margin-left: 25px;
+    margin-top: 0px;
+    font-family: 'myriad';
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.macmini a:hover{
+    opacity: 0.7;
+}

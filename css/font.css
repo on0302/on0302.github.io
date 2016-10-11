@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'gokuboso';
+    src: url('../font/chogokubosogothic_5.eot');
+    src: url('../font/chogokubosogothic_5.eot?#iefix') format('embedded-opentype'), url('../font/chogokubosogothic_5.woff') format('woff'), url('../font/chogokubosogothic_5.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'batman';
+    src: url('../font/batmfa__.eot');
+    /* IE9以上用 */
+    src: url('../font/batmfa__.eot?#iefix') format('embedded-opentype'), /* IE8以前用 */
+    url('../font/batmfa__.woff') format('woff'), /* モダンブラウザ用 */
+    url('../font/batmfa__.ttf') format('truetype');
+    /* iOS, Android用 */
+}
+
+@font-face {
+    font-family: 'not-round-m+';
+    src: url('../font/mplus-1c-regular.eot');
+    /* IE9以上用 */
+    src: url('../font/mplus-1c-regular.eot?#iefix') format('embedded-opentype'), /* IE8以前用 */
+    url('../font/mplus-1c-regular.woff') format('woff'), /* モダンブラウザ用 */
+    url('../font/mplus-1c-regular.ttf') format('truetype');
+    /* iOS, Android用 */
+}
+
+@font-face {
+    font-family: 'round-m+';
+    src: url('../font/rounded-mplus-1c-regular.eot');
+    /* IE9以上用 */
+    src: url('../font/rounded-mplus-1c-regular.eot?#iefix') format('embedded-opentype'), /* IE8以前用 */
+    url('../font/rounded-mplus-1c-regular.woff') format('woff'), /* モダンブラウザ用 */
+    url('../font/rounded-mplus-1c-regular.ttf') format('truetype');
+    /* iOS, Android用 */
+}
+
+@font-face {
+    font-family: 'keepcalm';
+    src: url('../font/KeepCalm-Medium.eot');
+    /* IE9以上用 */
+    src: url('../font/KeepCalm-Medium.eot?#iefix') format('embedded-opentype'), /* IE8以前用 */
+    url('../font/KeepCalm-Medium.woff') format('woff'), /* モダンブラウザ用 */
+    url('../font/KeepCalm-Medium.ttf') format('truetype');
+    /* iOS, Android用 */
+}
+
+@font-face {
+    font-family: 'myriad';
+    src: url('../font/MyriadPro-Regular.eot');
+    /* IE9以上用 */
+    src: url('../font/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE8以前用 */
+    url('../font/MyriadPro-Regular.woff') format('woff'), /* モダンブラウザ用 */
+    url('../font/MyriadPro-Regular.otf') format('truetype');
+    /* iOS, Android用 */
+}
+
+@font-face {
+    font-family: 'myriad-2';
+    src: url('../font/Myriad-Pro-Light-SemiExtended.eot');
+    /* IE9以上用 */
+    src: url('../font/Myriad-Pro-Light-SemiExtended.eot?#iefix') format('embedded-opentype'), /* IE8以前用 */
+    url('../font/Myriad-Pro-Light-SemiExtended.woff') format('woff'), /* モダンブラウザ用 */
+    url('../font/Myriad-Pro-Light-SemiExtended.ttf') format('truetype');
+    /* iOS, Android用 */
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../font/Roboto-Thin.eot');
+    /* IE9以上用 */
+    src: url('../font/Roboto-Thin.eot?#iefix') format('embedded-opentype'), /* IE8以前用 */
+    url('../font/Roboto-Thin.woff') format('woff'), /* モダンブラウザ用 */
+    url('../font/Roboto-Thin.ttf') format('truetype');
+    /* iOS, Android用 */
+}
+
+@font-face {
+    font-family: 'Avant Garde';
+    src: url('../font/texgyreadventor-regular.otf')
+}
+
+@font-face {
+	font-family: 'SmartUI';
+	src: url('../font/スマートフォントUI.otf')
+}
