@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background: #fff;
+    margin-top: 70px;
+}
+
+h3 {
+    border: 1px solid #ADD8E6;
+    background: #ADD8E6;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 5px 10px;
+    font-family: 'not-round-m+';
+}
+
+h4 {
+    padding-bottom: .5em;
+    border-bottom: 1px solid #ccc;
+    font-family: 'not-round-m+';
+}
+
+p {
+    line-height: 25px;
+    font-family: 'not-round-m+';
+}
+
+.main {
+    width: 100%;
+}
+
+.macbook-main {
+    width: 100%;
+    border: 0px solid #000;
+    height: 800px;
+}
+
+.macbook-main img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 180px;
+    left: 0px;
+}
+
+.macbook-main h1 {
+    width: 400px;
+    font-family: 'myriad-2';
+    font-size: 64px;
+    color: #333;
+    position: relative;
+    left: 320px;
+    top: 240px;
+    font-weight: 400;
+}
+
+.macbook-main h2 {
+    width: 400px;
+    font-family: 'gokuboso';
+    font-size: 26px;
+    color: #333;
+    position: relative;
+    left: 280px;
+    top: 240px;
+}
+
+.macbook-main a {
+    font-family: 'meiryo';
+    font-size: 19px;
+    color: #08c;
+    text-decoration: none;
+    position: relative;
+    left: 380px;
+    top: 250px;
+    transition: 0.2s;
+    letter-spacing: -1px;
+}
+
+.macbook-main a:hover {
+    text-decoration: underline;
+}
+
+.macbook-air-main {
+    width: 100%;
+    border: 0px solid #000;
+    height: 650px;
+}
+
+.macbook-air-main img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 60px;
+    left: 10px;
+}
+
+.macbook-air-main h1 {
+    width: 400px;
+    font-family: 'myriad-2';
+    font-size: 64px;
+    font-weight: 400;
+    color: #333;
+    position: relative;
+    bottom: 400px;
+    left: 700px;
+}
+
+.macbook-air-main h2 {
+    width: 400px;
+    font-family: 'gokuboso';
+    font-size: 26px;
+    color: #333;
+    position: relative;
+    bottom: 400px;
+    left: 690px;
+}
+
+.macbook-air-main a {
+    font-family: 'meiryo';
+    font-size: 19px;
+    color: #08c;
+    text-decoration: none;
+    position: relative;
+    bottom: 390px;
+    left: 820px;
+    letter-spacing: -1px;
+}
+
+.macbook-air-main a:hover {
+    text-decoration: underline;
+}
+
+.macbook-pro-main {
+    width: 100%;
+    border: 0px solid #000;
+    height: 650px;
+}
+
+.macbook-pro-main img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 60px;
+    left: 420px;
+}
+
+.macbook-pro-main h1 {
+    width: 400px;
+    font-family: 'myriad-2';
+    font-size: 64px;
+    font-weight: 400;
+    color: #333;
+    position: relative;
+    bottom: 300px;
+    left: 300px;
+}
+
+.macbook-pro-main h2 {
+    width: 500px;
+    font-family: 'gokuboso';
+    font-size: 26px;
+    color: #333;
+    position: relative;
+    bottom: 300px;
+    left: 240px;
+}
+
+.macbook-pro-main a {
+    font-family: 'meiryo';
+    font-size: 19px;
+    color: #08c;
+    text-decoration: none;
+    position: relative;
+    bottom: 290px;
+    left: 420px;
+    letter-spacing: -1px;
+}
+
+.macbook-pro-main a:hover {
+    text-decoration: underline;
+}
+
+.imac-main {
+    width: 100%;
+    border: 0px solid #000;
+    height: 1200px;
+}
+
+.imac-main img {
+    max-width: !00%;
+    height: auto;
+    position: relative;
+    top: 240px;
+    left: 0px;
+}
+
+.imac-main h1 {
+    width: 400px;
+    font-family: 'myriad-2';
+    font-size: 64px;
+    font-weight: 400;
+    color: #333;
+    position: relative;
+    bottom: 750px;
+    left: 800px;
+}
+
+.imac-main h2 {
+    width: 400px;
+    font-family: 'gokuboso';
+    font-size: 26px;
+    color: #333;
+    position: relative;
+    bottom: 750px;
+    left: 760px;
+    line-height: 35px;
+}
+
+.imac-main a {
+    font-family: 'meiryo';
+    font-size: 19px;
+    color: #08c;
+    text-decoration: none;
+    position: relative;
+    bottom: 750px;
+    left: 800px;
+}
+
+.imac-main a:hover {
+    text-decoration: underline;
+}
+
+.macpro-main {
+    width: 100% border: 0px solid #000;
+    height: 900px;
+}
+
+.macpro-main img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 60px;
+    left: 400px;
+}
+
+.macpro-main h1 {
+    width: 400px;
+    font-family: 'myriad-2';
+    font-size: 64px;
+    font-weight: 400;
+    color: #333;
+    position: relative;
+    bottom: 520px;
+    left: 220px;
+}
+
+.macpro-main h2 {
+    width: 400px;
+    font-family: 'gokuboso';
+    font-size: 26px;
+    color: #333;
+    position: relative;
+    bottom: 520px;
+    left: 170px;
+}
+
+.macpro-main a {
+    font-family: 'meiryo';
+    font-size: 19px;
+    color: #08c;
+    text-decoration: none;
+    position: relative;
+    bottom: 510px;
+    left: 255px;
+}
+
+.macmini-main {
+    width: 100%;
+    border: 0px solid #000;
+    height: 800px;
+}
+
+.macmini-main img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 50px;
+    left: 200px;
+}
+
+.macmini-main h1 {
+    width: 400px;
+    font-family: 'myriad-2';
+    font-size: 64px;
+    font-weight: 400;
+    color: #333;
+    position: relative;
+    bottom: 550px;
+    left: 550px;
+}
+
+.macmini-main h2 {
+    width: 400px;
+    font-family: 'gokuboso';
+    font-size: 26px;
+    color: #333;
+    position: relative;
+    bottom: 550px;
+    left: 540px;
+}
+
+.macmini-main a {
+    font-family: 'meiryo';
+    font-size: 19px;
+    color: #08c;
+    text-decoration: none;
+    position: relative;
+    bottom: 540px;
+    left: 605px;
+}
