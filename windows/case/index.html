@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One|Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../../css/font.css">
+	<link rel="stylesheet" href="../../css/menu.css">
+	<link rel="stylesheet" href="../../js/fakeLoader.js-master/fakeLoader.css">
+	<link rel="short icon" href="../../img/favicon.ico">
+	<title>GIGABIT</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="../../js/fakeLoader.js-master/fakeLoader.min.js"></script>
+	<script>
+		$(function () {
+			var showFlag = false;
+			var topBtn = $('#page-top');
+			topBtn.css('bottom', '-100px');
+			var showFlag = false;
+			//スクロールが100に達したらボタン表示
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					if (showFlag == false) {
+						showFlag = true;
+						topBtn.stop().animate({
+							'bottom': '20px'
+						}, 200);
+					}
+				} else {
+					if (showFlag) {
+						showFlag = false;
+						topBtn.stop().animate({
+							'bottom': '-100px'
+						}, 200);
+					}
+				}
+			});
+			//スクロールしてトップ
+			topBtn.click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 500);
+				return false;
+			});
+
+			$("#fakeLoader").fakeLoader({
+				timeToHide: 1100,
+				zindex: 999,
+				spinner: "spinner6",
+				bgColor: "#333",
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="fakeLoader"></div>
+
+	<header id="top-header">
+		<h1 class="logo"><a href="/index.html">GIGABIT</a></h1>
+		<nav id="global-nav">
+			<ul>
+				<li><a href="index.html" class="menu"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="/windows/home/index.html" class="menu"><i class="fa fa-windows"></i>Windows</a></li>
+				<li><a href="/mac/home/index.html" class="menu"><i class="fa fa-apple"></i>Mac</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="social-button">
+		<ul>
+			<li>
+				<a href="https://ja-jp.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="site-box">
+		<div class="box-1">
+			<img src="../../img/windows/pccase-flaticon.png" alt="" height="350">
+			<div class="box-mini1">
+				<h1>CASE</h1>
+				<p>
+					PCケースは、マザーボードや電源、光学ドライブなどの各種PCパーツを固定するための箱です。自作パソコンの見た目がきまるパーツであるほか、拡張性や静音性、冷却性にも大きく影響を持つため、慎重に選ぶ必要があります。
+				</p>
+			</div>
+		</div>
+
+		<div class="mainbox-2">
+			<div class="box-2">
+				<h2>選び方のポイント</h2>
+				<h3>種類・サイズ</h3>
+				<h4>スリムケース</h4>
+				<p>
+					スリムケースは小型で軽量で置き場所には困りませんが、ベイやスロット数が少なく、拡張性は高くありません。
+					<br>Mini-ITXやnano-ITXのマザーボードに対応しています。
+				</p>
+				<h4>ミドルケース</h4>
+				<p>
+					このミドルケースが主流で品数が多いです。MicroATX以下のマザーボードに対応し、コンパクトでありながら拡張性を備えたケースです。
+				</p>
+				<h4>フルタワー</h4>
+				<p>
+					フルタワーはExtended ATXやXL-ATXなどの大型マザーボードに対応し、ベイ数やスロット数も多く、もっとも拡張性に優れたケースです。
+				</p>
+				<h3>デザインと前面端子</h3>
+				<p>
+					PCケースはデザインで見た目が決まります。デザインを重視すると拡張性が落ちる場合もあるため、デザインと拡張性を両立したものを選びましょう。前面端子はUSBとサウンド・マイクが定番で、USB3.0対応の商品も多くなっています。
+				</p>
+				<h3>ベイ数・拡張スロット数</h3>
+				<p>
+					3.5インチベイや5.25インチベイとも数が多いほど装着できるパーツが増えますが、ケースのサイズが大きくなり、高さも増す傾向があります。最近のケースには3.5インチベイを搭載せず、ケース内部のシャドウベイのみの製品も増えてきています。またSSDの普及で2.5インチシャドウベイを持った製品も増えてきています。 使い方に合わせて選ぶのが良いでしょう。 拡張カードはマザーボードによって枚数が変わってくるので、拡張スロット数が大きくても意味がありません。またスリムケース・ミドルケースではロープロファイル規格のケースも多く、この場合は幅の狭いロープロファイルカードしか装着できません。使用予定のあるカードがある際には、対応しているか事前に確認しておきましょう。またグラフィックカードは種類によっては横長なものもあり、ケース内に干渉しないか確認しておきましょう。
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+	<p id="page-top"><a href="#wrap"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></p>
+</body>
+
+</html>

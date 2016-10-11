@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One|Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../../css/font.css">
+	<link rel="stylesheet" href="../../css/menu.css">
+	<link rel="stylesheet" href="../../js/fakeLoader.js-master/fakeLoader.css">
+	<link rel="short icon" href="../../img/favicon.ico">
+	<title>GIGABIT</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="../../js/fakeLoader.js-master/fakeLoader.min.js"></script>
+	<script>
+		$(function () {
+			var showFlag = false;
+			var topBtn = $('#page-top');
+			topBtn.css('bottom', '-100px');
+			var showFlag = false;
+			//スクロールが100に達したらボタン表示
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					if (showFlag == false) {
+						showFlag = true;
+						topBtn.stop().animate({
+							'bottom': '20px'
+						}, 200);
+					}
+				} else {
+					if (showFlag) {
+						showFlag = false;
+						topBtn.stop().animate({
+							'bottom': '-100px'
+						}, 200);
+					}
+				}
+			});
+			//スクロールしてトップ
+			topBtn.click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 500);
+				return false;
+			});
+
+			$("#fakeLoader").fakeLoader({
+				timeToHide: 1100,
+				zindex: 999,
+				spinner: "spinner6",
+				bgColor: "#333",
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="fakeLoader"></div>
+
+	<header id="top-header">
+		<h1 class="logo"><a href="/index.html">GIGABIT</a></h1>
+		<nav id="global-nav">
+			<ul>
+				<li><a href="index.html" class="menu"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="/windows/home/index.html" class="menu"><i class="fa fa-windows"></i>Windows</a></li>
+				<li><a href="/mac/home/index.html" class="menu"><i class="fa fa-apple"></i>Mac</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="social-button">
+		<ul>
+			<li>
+				<a href="https://ja-jp.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="site-box">
+		<div class="box-1">
+			<img src="../../img/windows/memory-flaticon.png" alt="" width="350">
+			<div class="box-mini1">
+				<h1>MEMORY</h1>
+				<p>メモリーとは、アプリケーションやシステムの動作に必要なファイルを一時的にほ保存するパーツです。メモリーの容量が多くなればなるほど、１度にたくさんのファイルを扱うことが可能になり、結果として動作が高速化します。</p>
+			</div>
+		</div>
+
+		<div class="mainbox-2">
+			<div class="box-2">
+				<h2>選び方のポイント</h2>
+				<h3>インターフェイス(形式)</h3>
+				<p>メモリーでは、「DIMM DDR4」や「S.O.DIMM DDR3」といった分類をされます。このうち、DIMMやS.O.DIMMにあたる部分が、インターフェイス(形式)です。DIMMはデスクトップ用、S.O.DIMMはノートパソコン用を意味しています。また、DDR以降の部分が規格です。</p>
+				<h4>DIMM(デスクトップ用)</h4>
+				<p>「Dual In-line Memory Module」の略称で、主にデスクトップ用で使用されます。形状が細長く、メモリスロットに合わせるり込みがあるのが特長です。</p>
+				<h4>S.O.DIMM(ノートパソコン用)</h4>
+				<p>「Small Outline Dual In-line Memory Module」の略称で、大きさはDIMMの約半分です。主にノートパソコン用に使用されますが、デスクトップ一体型でも使用されることがあります。</p>
+				<h3>規格</h3>
+				<h4>DDR4 SDRAM</h4>
+				<p>DDR3の2倍の転送速度と、消費電力が約20%向上した次世代メモリーです。まだ、一部のマザーボードのみ対応しているが今後主流になると思われるメモリー。</p>
+				<h4>DDR3 SDRAM</h4>
+				<p>DDR2の後継規格で2007年に登場。さらなる高速化と消費電力低減を実現。現在の主流規格です。</p>
+				<h4>DDR2 SDRAM</h4>
+				<p>2005年〜2009年頃に販売されていたパソコンに使われていた規格です。</p>
+				<h3>周波数</h3>
+				<p>メモリーは、メモリチップの規格、またはメモリモジュールの規格が決まっており、それぞれから動作クロック周波数、データ転送速度がわかります。</p>
+				<div class="ddr">
+					<h4>DDR SDRAM</h4>
+					<table>
+						<tr>
+							<td>メモリチップ規格</td>
+							<td>メモリモジュール規格</td>
+							<td>動作周波数</td>
+							<td>転送速度</td>
+						</tr>
+						<tr>
+							<td>DDR200</td>
+							<td>PC1600</td>
+							<td>200MHz</td>
+							<td>1.6GB/s</td>
+						</tr>
+						<tr>
+							<td>DDR226</td>
+							<td>PC2100</td>
+							<td>266MHz</td>
+							<td>2.1GB/s</td>
+						</tr>
+						<tr>
+							<td>DDR333</td>
+							<td>PC2700</td>
+							<td>333MHz</td>
+							<td>2.7GB/s</td>
+						</tr>
+						<tr>
+							<td>DDR400</td>
+							<td>PC3200</td>
+							<td>400MHz</td>
+							<td>3.2GB/s</td>
+						</tr>
+					</table>
+				</div>
+
+
+				<div class="ddr2">
+					<h4>DDR2 SDRAM</h4>
+					<table>
+						<tr>
+							<td>メモリチップ規格</td>
+							<td>メモリモジュール規格</td>
+							<td>動作周波数</td>
+							<td>転送速度</td>
+						</tr>
+						<tr>
+							<td>DDR2-400</td>
+							<td>PC2-3200</td>
+							<td>400MHz</td>
+							<td>3.2GB/s</td>
+						</tr>
+						<tr>
+							<td>DDR-533</td>
+							<td>PC2-4200</td>
+							<td>533MHz</td>
+							<td>4.2GB/s</td>
+						</tr>
+						<tr>
+							<td>DDR2-667</td>
+							<td>PC2-5300</td>
+							<td>667MHz</td>
+							<td>5.3GB/s</td>
+						</tr>
+						<tr>
+							<td>DDR-800</td>
+							<td>PC2-6400</td>
+							<td>800MHz</td>
+							<td>6.4GB/s</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="ddr3">
+					<h4>DDR3 SDRAM</h4>
+					<table>
+						<tr>
+							<td>メモリチップ規格</td>
+							<td>メモリモジュール規格</td>
+							<td>動作周波数</td>
+							<td>転送速度</td>
+						</tr>
+						<tr>
+							<td>DDR3-800</td>
+							<td>PC3-6400</td>
+							<td>800MHz</td>
+							<td>6.4GB/s</td>
+						</tr>
+						<tr>
+							<td>DDR3-1066</td>
+							<td>PC3-8500</td>
+							<td>1066MHz</td>
+							<td>8.5GB/s</td>
+						</tr>
+						<tr>
+							<td>DDR3-1333</td>
+							<td>PC3-10600</td>
+							<td>1333MHz</td>
+							<td>10.67GB/s</td>
+						</tr>
+						<tr>
+							<td>DDR3-1600</td>
+							<td>PC3-12800</td>
+							<td>1600MHz</td>
+							<td>12.8GB/s</td>
+						</tr>
+						<tr>
+							<td>DDR3-1800</td>
+							<td>PC3-14400</td>
+							<td>1800MHz</td>
+							<td>14.4GB/s</td>
+						</tr>
+						<tr>
+							<td>DDR3-2000</td>
+							<td>PC3-16000</td>
+							<td>2000MHz</td>
+							<td>16GB/s</td>
+						</tr>
+						<tr>
+							<td>DDR3-2133</td>
+							<td>PC3-17066</td>
+							<td>2133MHz</td>
+							<td>17.06GB/s</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="ddr4">
+					<h4>DDR4 SDRAM</h4>
+					<table>
+						<tr>
+							<td>メモリチップ規格</td>
+							<td>メモリモジュール規格</td>
+							<td>動作周波数</td>
+							<td>転送速度</td>
+						</tr>
+						<tr>
+							<td>DDR4-2133</td>
+							<td>PC4-17000</td>
+							<td>2133MHz</td>
+							<td>17.06GB/s</td>
+						</tr>
+						<tr>
+							<td>DDR4-2400</td>
+							<td>PC4-19200</td>
+							<td>2400MHz</td>
+							<td>19.2GB/s</td>
+						</tr>
+						<tr>
+							<td>DDR4-2666</td>
+							<td>PC4-21300</td>
+							<td>2666MHz</td>
+							<td>21.3GB/s</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<p id="page-top"><a href="#wrap"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></p>
+</body>
+
+</html>

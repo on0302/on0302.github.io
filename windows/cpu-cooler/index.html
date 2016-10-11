@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One|Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../../css/font.css">
+	<link rel="stylesheet" href="../../css/menu.css">
+	<link rel="stylesheet" href="../../js/fakeLoader.js-master/fakeLoader.css">
+	<link rel="short icon" href="../../img/favicon.ico">
+	<title>GIGABIT</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="../../js/fakeLoader.js-master/fakeLoader.min.js"></script>
+	<script>
+		$(function () {
+			var showFlag = false;
+			var topBtn = $('#page-top');
+			topBtn.css('bottom', '-100px');
+			var showFlag = false;
+			//スクロールが100に達したらボタン表示
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					if (showFlag == false) {
+						showFlag = true;
+						topBtn.stop().animate({
+							'bottom': '20px'
+						}, 200);
+					}
+				} else {
+					if (showFlag) {
+						showFlag = false;
+						topBtn.stop().animate({
+							'bottom': '-100px'
+						}, 200);
+					}
+				}
+			});
+			//スクロールしてトップ
+			topBtn.click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 500);
+				return false;
+			});
+
+			$("#fakeLoader").fakeLoader({
+				timeToHide: 1100,
+				zindex: 999,
+				spinner: "spinner6",
+				bgColor: "#333",
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="fakeLoader"></div>
+
+	<header id="top-header">
+		<h1 class="logo"><a href="/index.html">GIGABIT</a></h1>
+		<nav id="global-nav">
+			<ul>
+				<li><a href="index.html" class="menu"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="/windows/home/index.html" class="menu"><i class="fa fa-windows"></i>Windows</a></li>
+				<li><a href="/mac/home/index.html" class="menu"><i class="fa fa-apple"></i>Mac</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="social-button">
+		<ul>
+			<li>
+				<a href="https://ja-jp.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="site-box">
+		<div class="box-1">
+			<img src="../../img/windows/cpucooler-flaticon.png" alt="" height="350">
+			<div class="box-mini1">
+				<h1>CPU COOLER</h1>
+				<p>CPUは常に熱を発しています。また重たい処理や長時間使用していると温度が上昇してきます。高温状態のままにしておくとCPUの寿命が低下するほか、破損につながります。そこでCPUクーラーでCPUを冷却し、熱による暴走を防いで、動作を安定させているのです。CPUクーラーには主に2種類の方式があります。</p>
+			</div>
+		</div>
+
+		<div class="mainbox-2">
+			<div class="box-2">
+				<h2>CPUクーラーを選ぶ上でのポイント</h2>
+				<h3>空冷式</h3>
+				<p>CPUクーラーで主流の方式です。ヒートシンクと呼ばれる金属部分に冷却ファンを使用して風を当て熱を奪う方法です。最近では静音性の高い製品も登場しています。</p>
+				<h3>水冷式</h3>
+				<p>
+					空冷式よりも冷却効果の高い方式です。CPUから冷却液に熱を移し、ラジエーターで冷却液を循環させ冷却ファンで冷やし排熱する仕組みです。冷却効果が高いですが、冷却液の補充などのメンテナンスが必要です。最近ではメンテナンスフリーの簡易水冷式も登場しています。
+				</p>
+				<h2>選ぶ方のポイント</h2>
+
+				<h3>CPUソケット</h3>
+				<p>
+					装着するCPUソケットの規格とあったものを選ぶ必要があります。CPUクーラーには数種類の規格に対応したアタッチメントが付属していますが、取り付けたいマザーボードのソケット形状にあってるかどうかを事前に必ず確認しましょう。
+				</p>
+				<h3>サイズ</h3>
+				<p>
+					ソケット形状があっていても、使いたいPCケースに収まるサイズでなければCPUクーラーを取り付けることができません。サイズのチェックも必ずしましょう。
+				</p>
+				<h3>サイドフローとトップフロー</h3>
+				<p>空冷式CPUクーラーはサイドフロー型とトップフロー型の2種類に分けられます。トップフロー型はCPUだけでなくマザーボード全体やメモリも冷却できるのが特徴です。サイズも豊富で省スペースPCやスリムケースにも対応しています。しかし、CPU冷却後の空気をちゃんと排気する必要があります。いっぽう、サイドフロー型はCPU冷却後の空気を背面ファンで排気する事ができます。風の流れが直線的なので、冷却後の空気が溜まりにくくCPUを冷却できます。CPU以外のパーツの冷却が弱くなってしまうというデメリットも有ります。こういった特徴を踏まえてタイプを選びましょう。</p>
+			</div>
+		</div>
+	</div>
+
+	<p id="page-top"><a href="#wrap"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></p>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One|Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../../css/font.css">
+	<link rel="stylesheet" href="../../css/menu.css">
+	<link rel="stylesheet" href="../../js/fakeLoader.js-master/fakeLoader.css">
+	<link rel="short icon" href="../../img/favicon.ico">
+	<title>GIGABIT</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="../../js/fakeLoader.js-master/fakeLoader.min.js"></script>
+	<script>
+		$(function () {
+			var showFlag = false;
+			var topBtn = $('#page-top');
+			topBtn.css('bottom', '-100px');
+			var showFlag = false;
+			//スクロールが100に達したらボタン表示
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					if (showFlag == false) {
+						showFlag = true;
+						topBtn.stop().animate({
+							'bottom': '20px'
+						}, 200);
+					}
+				} else {
+					if (showFlag) {
+						showFlag = false;
+						topBtn.stop().animate({
+							'bottom': '-100px'
+						}, 200);
+					}
+				}
+			});
+			//スクロールしてトップ
+			topBtn.click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 500);
+				return false;
+			});
+
+			$("#fakeLoader").fakeLoader({
+				timeToHide: 1100,
+				zindex: 999,
+				spinner: "spinner6",
+				bgColor: "#333",
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="fakeLoader"></div>
+
+	<header id="top-header">
+		<h1 class="logo"><a href="/index.html">GIGABIT</a></h1>
+		<nav id="global-nav">
+			<ul>
+				<li><a href="index.html" class="menu"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="/windows/home/index.html" class="menu"><i class="fa fa-windows"></i>Windows</a></li>
+				<li><a href="/mac/home/index.html" class="menu"><i class="fa fa-apple"></i>Mac</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="social-button">
+		<ul>
+			<li>
+				<a href="https://ja-jp.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="site-box">
+		<div class="box-1">
+			<img src="../../img/windows/fan-flaticon.png" alt="" height="450">
+			<div class="box-mini1">
+				<h1>FAN</h1>
+				<p>ケースファンとはPCケースの中に取り付ける送風機です。
+					<br> ケースファンを取り付けることによって、PC内部のエアフローを改善し、温度上昇を抑制し、熱暴走による故障を防ぎます。PCケースでは前面から吸気し、後面から、排気するという方法が主流です。なかには、側面や上面に取り付けることもあります。
+				</p>
+			</div>
+		</div>
+
+		<div class="mainbox-2">
+			<div class="box-2">
+				<h2>選び方のポイント</h2>
+				<h3>rpm</h3>
+				<p>ファンが１分間に回転する回転数を表した値のこと。この値が大きいほど、冷却効率が高くなりますが、静音性も比例して、悪くなります。</p>
+				<h3>最大風量(CFM)</h3>
+				<p>ファンが1分間に送り込む風量を表した値のこと。サイズの大きいファンほど多くの風量を送り込むことができます。</p>
+				<h3>db(デシベル)</h3>
+				<p>騒音レベルを示すもので、数値が大きくなるほどうるさくなります。ケースファンの中には、静音性をうたった製品もあります。</p>
+				<h3>サイズ・厚み</h3>
+				<p>現在、ケースファンのサイズは120mm角が主流になっていますが、他にも60mm角や80mm角、92mm角、140mm角などもあります。ケースが対応しているファンを購入しましょう。また厚さも25mmが一般的ですが、より薄い20mmや風量重視の38mmなどもおあります。</p>
+				<h3>PWM方式(Pulse Width Modulation)</h3>
+				<p>ファンの回転数をパルス信号で制御する方法で、マザーボードのBIOS設定やファンコントローラーなどで調節が可能です。</p>
+			</div>
+		</div>
+	</div>
+
+	<p id="page-top"><a href="#wrap"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></p>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One|Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../../css/font.css">
+	<link rel="stylesheet" href="../../css/menu.css">
+	<link rel="stylesheet" href="../../js/fakeLoader.js-master/fakeLoader.css">
+	<link rel="short icon" href="../../img/favicon.ico">
+	<title>GIGABIT</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="../../js/fakeLoader.js-master/fakeLoader.min.js"></script>
+	<script>
+		$(function () {
+			var showFlag = false;
+			var topBtn = $('#page-top');
+			topBtn.css('bottom', '-100px');
+			var showFlag = false;
+			//スクロールが100に達したらボタン表示
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					if (showFlag == false) {
+						showFlag = true;
+						topBtn.stop().animate({
+							'bottom': '20px'
+						}, 200);
+					}
+				} else {
+					if (showFlag) {
+						showFlag = false;
+						topBtn.stop().animate({
+							'bottom': '-100px'
+						}, 200);
+					}
+				}
+			});
+			//スクロールしてトップ
+			topBtn.click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 500);
+				return false;
+			});
+
+			$("#fakeLoader").fakeLoader({
+				timeToHide: 1100,
+				zindex: 999,
+				spinner: "spinner6",
+				bgColor: "#333",
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="fakeLoader"></div>
+
+	<header id="top-header">
+		<h1 class="logo"><a href="/index.html">GIGABIT</a></h1>
+		<nav id="global-nav">
+			<ul>
+				<li><a href="index.html" class="menu"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="/windows/home/index.html" class="menu"><i class="fa fa-windows"></i>Windows</a></li>
+				<li><a href="/mac/home/index.html" class="menu"><i class="fa fa-apple"></i>Mac</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="social-button">
+		<ul>
+			<li>
+				<a href="https://ja-jp.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="site-box">
+		<div class="box-1">
+			<img src="../../img/windows/windows-logo.svg" alt="" height="250">
+			<div class="box-mini1">
+				<h1>OS</h1>
+				<p>OSは、コンピューターを動かす上で基本となるソフトで、OSを基本ソフトウェアといいます。Operating System(オペレーティングシステム)の略で、コンピューター全体を管理、制御し、人が使えるようにする役割があります。</p>
+			</div>
+		</div>
+
+		<div class="mainbox-2">
+			<div class="box-2">
+				<h2>選び方のポイント</h2>
+				<h3>Windows○.○</h3>
+				<p>
+					Windowsには7や8などの種類があります。それぞれでUIなどのデザインが異なり使い方が少し違ってきます。しかしMicrosoftが行なっているセキュリティーアップデートのサポートにおいてサポート終了年が決まっているので、長く使いたい場合は、一番最新のものを購入しておくのがいいでしょう。
+				</p>
+				<table>
+					<tr>
+						<td>製品名</td>
+						<td>発売年</td>
+						<td>メインストリート
+							<br>サポート終了</td>
+						<td>延長サポート終了</td>
+					</tr>
+					<tr>
+						<td>Widows XP</td>
+						<td>2001年</td>
+					</tr>
+					<tr>
+						<td>Windows Vista</td>
+						<td>2007年</td>
+					</tr>
+					<tr>
+						<td>Windows 7</td>
+						<td>2009年</td>
+					</tr>
+					<tr>
+						<td>Windows 8</td>
+						<td>2012年</td>
+					</tr>
+					<tr>
+						<td>Windows 8.1</td>
+						<td>2013年</td>
+					</tr>
+					<tr>
+						<td>Windows10</td>
+						<td>2015年</td>
+					</tr>
+				</table>
+				<h3>製品</h3>
+				<p>
+					Windowsには
+				</p>
+				<br>
+				<h3>接続インターフェイス</h3>
+				<p>HDDの接続インターフェイスには大きく2つの種類があります。IDEとSATAがあります。 現在ではSATAが主流になっていますが、一世代前のパソコンなどにはIDEのHDDが載っていることもあります。SATAは性能も価格もIDEより優れているので、選ぶ際はSATAのものを購入しましょう。 また、SATAにもいくつかの規格があります。それぞれの規格によって転送速度なども変わるので、最新のものを選ぶようにしましょう。
+				</p>
+				<table>
+					<tr>
+						<td>規格</td>
+						<td>転送速度</td>
+					</tr>
+					<tr>
+						<td>SATA3.0</td>
+						<td>6Gbps</td>
+					</tr>
+					<tr>
+						<td>SATA2.0</td>
+						<td>3Gbps</td>
+					</tr>
+					<tr>
+						<td>SATA1.0</td>
+						<td>1.5Gbps</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<p id="page-top"><a href="#wrap"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></p>
+</body>
+
+</html>

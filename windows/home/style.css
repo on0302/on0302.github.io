@@ -1,0 +1,447 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+
+/* Effect1
+ *************************************** */
+
+
+/* 擬似要素の共通スタイル */
+
+.change-border01::after,
+.change-border01::before,
+.change-border01__inner::after,
+.change-border01__inner::before {
+	background-color: #fff;
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 10;
+	transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+}
+
+
+/* 左上へ配置 */
+
+.change-border01::after {
+	height: 1px;
+	left: -1px;
+	top: -1px;
+	width: 0px;
+}
+
+
+/* 右下へ配置 */
+
+.change-border01::before {
+	bottom: -1px;
+	height: 1px;
+	right: -1px;
+	width: 0px;
+}
+
+
+/* 左下へ配置 */
+
+.change-border01__inner::after {
+	bottom: -1px;
+	height: 0px;
+	left: -1px;
+	width: 1px;
+}
+
+
+/* 右下へ配置 */
+
+.change-border01__inner::before {
+	height: 0px;
+	right: -1px;
+	top: -1px;
+	width: 1px;
+}
+
+
+/* hover */
+
+.change-border01:hover::after,
+.change-border01:hover::before {
+	width: 100%;
+	width: calc(100% + 1px);
+}
+
+.change-border01:hover .change-border01__inner::after,
+.change-border01:hover .change-border01__inner::before {
+	height: 100%;
+	height: calc(100% + 1px);
+}
+
+.box1 {
+	width: 100%;
+	height: 100%;
+	background-color: #ED5565;
+	cursor: pointer;
+}
+
+.box1 .button {
+	font-family: 'roboto';
+	font-weight: 400;
+	font-size: 7vw;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	top: 20vh;
+	left: 20vh;
+	float: left;
+	border: 1px solid #ED5565;
+	padding: 10px 40px;
+}
+
+.box1 img {
+	float: left;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	top: 25vh;
+	left: 30vw;
+	background-color: #ED5565;
+}
+
+.box2 {
+	width: 100%;
+	height: 100%;
+	background-color: #FF2D55;
+}
+
+.box2 .button {
+	font-family: 'roboto';
+	font-weight: 400;
+	font-size: 7vw;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	top: 20vh;
+	left: 20vh;
+	float: left;
+	border: 1px solid #FF2D55;
+	padding: 10px 40px;
+}
+
+.box2 img {
+	float: left;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	top: 35vh;
+	left: 40vw;
+}
+
+.box3 {
+	width: 100%;
+	height: 100%;
+	background-color: #FF3B30;
+}
+
+.box3 .button {
+	font-family: 'roboto';
+	font-weight: 400;
+	font-size: 7vw;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	top: 20vh;
+	left: 20vh;
+	float: left;
+	border: 1px solid #FF3B30;
+	padding: 10px 40px;
+}
+
+.box3 img {
+	float: left;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	top: 20vh;
+	left: 10vw;
+}
+
+.box4 {
+	width: 100%;
+	height: 100%;
+	background-color: #FFCC00;
+}
+
+.box4 .button {
+	font-family: 'roboto';
+	font-weight: 400;
+	font-size: 7vw;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	top: 20vh;
+	left: 20vh;
+	float: left;
+	border: 1px solid #FFCC00;
+	padding: 10px 40px;
+}
+
+.box4 img {
+	float: left;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	top: 15vh;
+	left: 35vw;
+}
+
+.box5 {
+	width: 100%;
+	height: 100%;
+	background-color: #4CD964;
+}
+
+.box5 .button {
+	font-family: 'roboto';
+	font-weight: 400;
+	font-size: 7vw;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	top: 20vh;
+	left: 20vh;
+	float: left;
+	border: 1px solid #4CD964;
+	padding: 10px 40px;
+}
+
+.box5 img {
+	float: left;
+	max-width: 100&;
+	height: auto;
+	position: relative;
+	top: 18vh;
+	left: 10vw;
+}
+
+.box6 {
+	width: 100%;
+	height: 100%;
+	background-color: #34AADC;
+}
+
+.box6 .button {
+	font-family: 'roboto';
+	font-weight: 400;
+	font-size: 7vw;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	top: 20vh;
+	left: 20vh;
+	float: left;
+	border: 1px solid #34AADC;
+	padding: 10px 40px;
+}
+
+.box6 img {
+	float: left;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	top: 30vh;
+	left: 15vw;
+}
+
+.box7 {
+	width: 100%;
+	height: 100%;
+	background-color: #3498db;
+}
+
+.box7 .button {
+	font-family: 'roboto';
+	font-weight: 400;
+	font-size: 7vw;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	top: 20vh;
+	left: 20vh;
+	float: left;
+	border: 1px solid #3498db;
+	padding: 10px 40px;
+}
+
+.box7 img {
+	float: left;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	top: 30vh;
+	left: -5vw;
+}
+
+.box8 {
+	width: 100%;
+	height: 100%;
+	background-color: #303F9F;
+}
+
+.box8 .button {
+	font-family: 'roboto';
+	font-weight: 400;
+	font-size: 7vw;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	top: 20vh;
+	left: 20vh;
+	float: left;
+	border: 1px solid #303F9F;
+	padding: 10px 40px;
+}
+
+.box8 h2 {
+	display: block;
+	float: left;
+	font-size: 280px;
+	position: relative;
+	top: 30vh;
+	left: 50vw;
+}
+
+.box9 {
+	width: 100%;
+	height: 100%;
+	background-color: #9C27B0;
+}
+
+.box9 .button {
+	display: block;
+	font-family: 'roboto';
+	font-weight: 400;
+	font-size: 7vw;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	top: 20vh;
+	left: 20vh;
+	float: left;
+	border: 1px solid #9C27B0;
+	padding: 10px 40px;
+}
+
+.box9 img {
+	display: block;
+	float: left;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	top: 30vh;
+	left: 1vw;
+}
+
+.box10 {
+	width: 100%;
+	height: 100%;
+	background-color: #673AB7;
+}
+
+.box10 .button {
+	display: block;
+	font-family: 'roboto';
+	font-weight: 400;
+	font-size: 7vw;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	top: 20vh;
+	left: 20vh;
+	float: left;
+	border: 1px solid #673AB7;
+	padding: 10px 40px;
+}
+
+.box10 img {
+	float: left;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	top: 30vh;
+	left: 10vw;
+}
+
+.box11 {
+	width: 100%;
+	height: 100%;
+	background-color: #607D8B;
+}
+
+.box11 .button {
+	display: block;
+	font-family: 'roboto';
+	font-weight: 400;
+	font-size: 7vw;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	top: 20vh;
+	left: 20vh;
+	float: left;
+	border: 1px solid #607D8B;
+	padding: 10px 40px;
+}
+
+.box11 img {
+	float: left;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	top: 30vh;
+	left: 40vw;
+}
+
+.box12 {
+	width: 100%;
+	height: 100%;
+	background-color: #9E9E9E;
+}
+
+.box12 .button {
+	display: block;
+	font-family: 'roboto';
+	font-weight: 400;
+	font-size: 7vw;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	top: 20vh;
+	left: 20vh;
+	float: left;
+	border: 1px solid #9E9E9E;
+	padding: 10px 40px;
+}
+
+.box12 img {
+	float: left;
+	max-width: 100%;
+	height: auto;
+	position: relative;
+	top: 25vh;
+	left: 10vw;
+}

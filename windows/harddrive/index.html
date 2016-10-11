@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One|Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../../css/font.css">
+	<link rel="stylesheet" href="../../css/menu.css">
+	<link rel="stylesheet" href="../../js/fakeLoader.js-master/fakeLoader.css">
+	<link rel="short icon" href="../../img/favicon.ico">
+	<title>GIGABIT</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="../../js/fakeLoader.js-master/fakeLoader.min.js"></script>
+	<script>
+		$(function () {
+			var showFlag = false;
+			var topBtn = $('#page-top');
+			topBtn.css('bottom', '-100px');
+			var showFlag = false;
+			//スクロールが100に達したらボタン表示
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					if (showFlag == false) {
+						showFlag = true;
+						topBtn.stop().animate({
+							'bottom': '20px'
+						}, 200);
+					}
+				} else {
+					if (showFlag) {
+						showFlag = false;
+						topBtn.stop().animate({
+							'bottom': '-100px'
+						}, 200);
+					}
+				}
+			});
+			//スクロールしてトップ
+			topBtn.click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 500);
+				return false;
+			});
+
+			$("#fakeLoader").fakeLoader({
+				timeToHide: 1100,
+				zindex: 999,
+				spinner: "spinner6",
+				bgColor: "#333",
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="fakeLoader"></div>
+
+	<header id="top-header">
+		<h1 class="logo"><a href="/index.html">GIGABIT</a></h1>
+		<nav id="global-nav">
+			<ul>
+				<li><a href="index.html" class="menu"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="/windows/home/index.html" class="menu"><i class="fa fa-windows"></i>Windows</a></li>
+				<li><a href="/mac/home/index.html" class="menu"><i class="fa fa-apple"></i>Mac</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="social-button">
+		<ul>
+			<li>
+				<a href="https://ja-jp.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="site-box">
+		<div class="box-1">
+			<img src="../../img/windows/harddrive-flaticon.png" alt="" height="350">
+			<div class="box-mini1">
+				<h1>HARD DRIVE</h1>
+				<p>HDDは、Windowsなどのシステム(OS)をはじめ、書類や写真など様々なファイルを保存するパーツです。現在主流のHDDは、3.5インチのほかに2.5インチがあります。</p>
+			</div>
+		</div>
+
+		<div class="mainbox-2">
+			<div class="box-2">
+				<h2>選び方のポイント</h2>
+				<h3>容量</h3>
+				<p>サイズが大きいほど、多くのデータを保存することができます。
+					<br> 単位は、TB(テラバイト)>GB(ギガバイト)>MB(メガバイト)>KB(キロバイト)の順に大きいです。容量によって値段が変わりますので、自分の用途に合ったものを選びましょう。
+				</p>
+				<br>
+				<h3>回転数(rpm)</h3>
+				<p>rpm(アールピーエム:Revolution Per Minute)は、HDDの内部にある円盤を1分間に何回転するかを表したもので、HDDの読書速度を表したものです。この数字が大きければ大きいほど、ディスクが早く回転し、短時間で多くのデータを扱うことができ、結果データの出し入れが早くなります。7200rpmは1分間に7200回転するという意味で、デスクトップでは7200rpm、ノートパソコンでは5400rpmが現在の主流になっています。</p>
+				<br>
+				<h3>接続インターフェイス</h3>
+				<p>HDDの接続インターフェイスには大きく2つの種類があります。IDEとSATAがあります。 現在ではSATAが主流になっていますが、一世代前のパソコンなどにはIDEのHDDが載っていることもあります。SATAは性能も価格もIDEより優れているので、選ぶ際はSATAのものを購入しましょう。 また、SATAにもいくつかの規格があります。それぞれの規格によって転送速度なども変わるので、最新のものを選ぶようにしましょう。
+				</p>
+				<table>
+					<tr>
+						<td>規格</td>
+						<td>転送速度</td>
+					</tr>
+					<tr>
+						<td>SATA3.0</td>
+						<td>6Gbps</td>
+					</tr>
+					<tr>
+						<td>SATA2.0</td>
+						<td>3Gbps</td>
+					</tr>
+					<tr>
+						<td>SATA1.0</td>
+						<td>1.5Gbps</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<p id="page-top"><a href="#wrap"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></p>
+</body>
+
+</html>

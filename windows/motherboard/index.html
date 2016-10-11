@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One|Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../../css/font.css">
+	<link rel="stylesheet" href="../../css/menu.css">
+	<link rel="stylesheet" href="../../js/fakeLoader.js-master/fakeLoader.css">
+	<link rel="short icon" href="../../img/favicon.ico">
+	<title>GIGABIT</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="../../js/fakeLoader.js-master/fakeLoader.min.js"></script>
+	<script>
+		$(function () {
+			var showFlag = false;
+			var topBtn = $('#page-top');
+			topBtn.css('bottom', '-100px');
+			var showFlag = false;
+			//スクロールが100に達したらボタン表示
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					if (showFlag == false) {
+						showFlag = true;
+						topBtn.stop().animate({
+							'bottom': '20px'
+						}, 200);
+					}
+				} else {
+					if (showFlag) {
+						showFlag = false;
+						topBtn.stop().animate({
+							'bottom': '-100px'
+						}, 200);
+					}
+				}
+			});
+			//スクロールしてトップ
+			topBtn.click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 500);
+				return false;
+			});
+
+			$("#fakeLoader").fakeLoader({
+				timeToHide: 1100,
+				zindex: 999,
+				spinner: "spinner6",
+				bgColor: "#333",
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="fakeLoader"></div>
+
+	<header id="top-header">
+		<h1 class="logo"><a href="../../home/index.html">GIGABIT</a></h1>
+		<nav id="global-nav">
+			<ul>
+				<li><a href="../../home/index.html" class="menu"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="../../windows/home/index.html" class="menu"><i class="fa fa-windows"></i>Windows</a></li>
+				<li><a href="../../mac/home/index.html" class="menu"><i class="fa fa-apple"></i>Mac</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="social-button">
+		<ul>
+			<li>
+				<a href="https://ja-jp.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="site-box">
+		<div class="box-1">
+			<img src="../../img/windows/motherboard-flaticon.png" alt="" height="350">
+			<div class="box-mini1">
+				<h1>マザーボードとは</h1>
+				<p>
+					マザーボードは、CPUやメモリーなどの主要パーツを装着するための基盤で、パソコンの性能を決定づけるパーツといえます。マザーボードはすべてのパーツをつなぎ合わせる母艦のような働きをします。
+				</p>
+			</div>
+		</div>
+
+		<div class="mainbox-2">
+			<div class="box-2">
+				<h2>選び方のポイント</h2>
+				<h3>マザーボードの規格</h3>
+				<p>マザーボードの規格は、マザーボードの大きさで変わってきます。また、PCケースも規格に対応した物を購入するようにしましょう。一般的に、マザーボードの規格は以下の規格があります。</p>
+				<table>
+					<tr>
+						<th>規格</th>
+						<th>説明</th>
+					</tr>
+					<tr>
+						<td>ATX</td>
+						<td>最も一般的に使用されている規格</td>
+					</tr>
+					<tr>
+						<td>MicroATX</td>
+						<td>ATXを小型化した省スペースデスクトップ向けの規格</td>
+					</tr>
+					<tr>
+						<td>Mini-ITX</td>
+						<td>MircoATXより小型化したわずか17cm四方のマザーボード。
+							<br>これより小さいものにはベアボーンなどがある。</td>
+					</tr>
+					<tr>
+						<td>Extend ATX
+							<br>(E-ATX)</td>
+						<td>ATXを大型化した規格で拡張性が一番高い</td>
+					</tr>
+					<tr>
+						<td>XL-ATX</td>
+						<td>ATXを横に大きくした規格</td>
+					</tr>
+				</table>
+				<p>PCケースは、以下のように互換性があります。</p>
+				<table>
+					<tr>
+						<td>ATXケース</td>
+						<td>ATXとMircoATX、Mini-ITX</td>
+					</tr>
+					<tr>
+						<td>E-ATXケース</td>
+						<td>E-ATXとATX、MicroATX、MiniITX</td>
+					</tr>
+				</table>
+				<p>基本的にこのような互換性があるPCケースが多いが、実際に購入する際は再度対応しているか確認する必要があります。詳しくは<a href="../../windows/case/index.html">PCケースページ</a>へ</p>
+				<h3>CPUとソケット</h3>
+				<p>マザーボードを選ぶ上で重要になるのがCPUとソケットです。CPUによって対応するソケットが異なるので注意が必要です。</p>
+			</div>
+		</div>
+	</div>
+
+	<p id="page-top"><a href="#wrap"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></p>
+</body>
+
+</html>

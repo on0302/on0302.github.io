@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One|Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../../css/font.css">
+	<link rel="stylesheet" href="../../css/menu.css">
+	<link rel="stylesheet" href="../../js/fakeLoader.js-master/fakeLoader.css">
+	<link rel="short icon" href="../../img/favicon.ico">
+	<title>GIGABIT</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="../../js/fakeLoader.js-master/fakeLoader.min.js"></script>
+	<script>
+		$(function () {
+			var showFlag = false;
+			var topBtn = $('#page-top');
+			topBtn.css('bottom', '-100px');
+			var showFlag = false;
+			//スクロールが100に達したらボタン表示
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					if (showFlag == false) {
+						showFlag = true;
+						topBtn.stop().animate({
+							'bottom': '20px'
+						}, 200);
+					}
+				} else {
+					if (showFlag) {
+						showFlag = false;
+						topBtn.stop().animate({
+							'bottom': '-100px'
+						}, 200);
+					}
+				}
+			});
+			//スクロールしてトップ
+			topBtn.click(function () {
+				$('body,html').animate({
+					scrollTop: 0
+				}, 500);
+				return false;
+			});
+
+			$("#fakeLoader").fakeLoader({
+				timeToHide: 1100,
+				zindex: 999,
+				spinner: "spinner6",
+				bgColor: "#333",
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="fakeLoader"></div>
+
+	<header id="top-header">
+		<h1 class="logo"><a href="/index.html">GIGABIT</a></h1>
+		<nav id="global-nav">
+			<ul>
+				<li><a href="index.html" class="menu"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="/windows/home/index.html" class="menu"><i class="fa fa-windows"></i>Windows</a></li>
+				<li><a href="/mac/home/index.html" class="menu"><i class="fa fa-apple"></i>Mac</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="social-button">
+		<ul>
+			<li>
+				<a href="https://ja-jp.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="site-box">
+		<div class="box-1">
+			<img src="../../img/windows/cpu-flaticon.png" alt="" height="200">
+			<div class="box-mini1">
+				<h1>CPU</h1>
+				<p>
+					CPUは、パソコンでもっとも重要になるパーツで、演算処理を行う装置でパソコンの頭脳となる部分になります。
+					<br>CPU自体は小さなものですが、パソコンの性能を大きく左右します。
+					<br> CPUは、インテルとAMDの二社が占めています。
+				</p>
+			</div>
+		</div>
+
+		<div class="main-box-2">
+			<div class="box-2">
+				<h2>CPUを選ぶ上でのポイント</h2>
+				<table>
+					<tr>
+						<th class="tab1" style="background:#f3f3f3">&nbsp;ポイント&nbsp;</th>
+						<th style="background:#f3f3f3">
+							<center>説明</center>
+						</th>
+					</tr>
+					<tr>
+						<td class="tab1">価格</td>
+						<td>性能の高いCPUになるにつれて価格も高くなります。価格がおなじくらいであれば、性能も似たものになります。</td>
+					</tr>
+					<tr>
+						<td class="tab1">ソケット形状</td>
+						<td>CPUはマザーボード上にあるソケットに装着しますが、ソケットはCPUのメーカーやシリーズによって形状が異なります。そのため、CPUを選ぶ際にはマザーボート側のソケットタイプにあった物を選びましょう。</td>
+					</tr>
+					<tr>
+						<td class="tab1">TDP</td>
+						<td>CPUの最大発熱量を表すもので、CPUクーラーを選ぶ際の基準になります。この値が高いCPUは、大きいCPUクーラーなどでないと動作が安定しなくなることもあります。</td>
+					</tr>
+					<tr>
+						<td class="tab1">コア</td>
+						<td>演算処理を行う部分で、デュアルコアの場合にはシングルコアCPUの２つ分の処理を並行して行うことができます。コア数が多いほど、複数の処理を手分けしてすばやく行うことができます。</td>
+					</tr>
+					<tr>
+						<td class="tab1">スレッド</td>
+						<td>一度に処理できる命令の数のこと。コア数とスレッド数はおなじになりますが、インテルのCPUは、仮想的に倍のスレッドで処理することができるハイパースレッディングという機能を備えているものが多いです。</td>
+					</tr>
+					<tr>
+						<td class="tab1">動作周波数</td>
+						<td>クロックとも呼ばれます。コア数などが同一のCPUであれば、動作周波数の値が大きいほど、処理速度は高速になり、TDPも大きくなります。</td>
+					</tr>
+					<tr>
+						<td class="tab1">キャッシュメモリー</td>
+						<td>CPU内部に設けたれた記憶装置。メインメモリーへのアクセスを減らして高速化してくれます。</td>
+					</tr>
+					<tr>
+						<td class="tab1">GPU性能</td>
+						<td>内蔵グラフィックスと呼ばれます。3Dゲームなどには重要担ってきます。最近のCPUは内蔵グラフィックスも性能が上がっているため、通常の使用では、あまり変わりはないでしょう。intelのCPUはCPU性能、AMDのCPUはGPU性能が高い傾向があります。</td>
+					</tr>
+				</table>
+				<br>
+				<h2>主な種類</h2>
+				<h3>インテル</h3>
+				<table>
+					<tr>
+						<th style="background:#f3f3f3">パッケージ</th>
+						<th class="tab2" style="background:#f3f3f3">名前</th>
+						<th style="background:#f3f3f3">説明</th>
+					</tr>
+					<tr>
+						<td><img src="../../img/windows/cpulogo/intel/Xeon.png" alt="" width="150px"></td>
+						<td class="tab2">Xeon</td>
+						<td>サーバーあるいはワークステーション向けのCPU</td>
+					</tr>
+					<tr>
+						<td><img src="../../img/windows/cpulogo/intel/Corei7.png" alt="" width="150px"></td>
+						<td class="tab2">Corei7</td>
+						<td>高機能で高価格のCPU 4つのコアを持っており、ハイパースレッディングを使用して8つのスレッドでプログラムを処理します</td>
+					</tr>
+					<tr>
+						<td><img src="../../img/windows/cpulogo/intel/Corei5.png" alt="" width="150px"></td>
+						<td class="tab2">Corei5</td>
+						<td>一般向けの高性能なCPU 4つのコアを持っており、ハイパースレッディングを搭載していないため、4つのスレッドでプログラムを処理します</td>
+					</tr>
+					<tr>
+						<td><img src="../../img/windows/cpulogo/intel/Corei3.png" alt="" width="150px"></td>
+						<td class="tab2">Corei3</td>
+						<td>価格も性能も標準なCPU 2つのコアを持っており、ハイパースレッディングを使用して4スレッドでプログラムを処理します</td>
+					</tr>
+					<tr>
+						<td><img src="../../img/windows/cpulogo/intel/Core%202%20Quad.jpg" alt="" width="150px"></td>
+						<td class="tab2">Core 2 Quad</td>
+						<td>Corei7が発売されるまで主流だったCPU 4つのコアを持っており、プログラムを処理します</td>
+					</tr>
+					<tr>
+						<td><img src="../../img/windows/cpulogo/intel/Core%202%20Duo.jpg" alt="" width="150px"></td>
+						<td class="tab2">Core 2 Duo</td>
+						<td>i5とQuadの前に主流であったCPU 2つのコアを持っており、プログラムを処理します</td>
+					</tr>
+					<tr>
+						<td><img src="../../img/windows/cpulogo/intel/Pentium.png" alt="" width="150px"></td>
+						<td>Pentium</td>
+						<td>i3より低性能で低価格のCPU</td>
+					</tr>
+					<tr>
+						<td><img src="../../img/windows/cpulogo/intel/Celeron.png" alt="" width="150px"></td>
+						<td class="tab2">Celeron</td>
+						<td>かなり性能を抑えた低価格のCPU</td>
+					</tr>
+				</table>
+				<br>
+				<h3>AMD</h3>
+				<table>
+					<tr>
+						<th style="background:#f3f3f3">パッケージ</th>
+						<th class="tab2" style="background:#f3f3f3">名前</th>
+						<th style="background:#f3f3f3">説明</th>
+					</tr>
+					<tr>
+						<td><img src="../../img/windows/cpulogo/amd/Opteron-series.png" alt="" width="150px"></td>
+						<td class="tab2">Opteron</td>
+						<td>サーバーやワークステーション向けのCPU</td>
+					</tr>
+					<tr>
+						<td><img src="../../img/windows/cpulogo/amd/FX-series.png" alt="" width="150px"></td>
+						<td>FX</td>
+						<td>世界初の8コアCPU</td>
+					</tr>
+					<tr>
+						<td><img src="../../img/windows/cpulogo/amd/A-series.png" alt="" width="150px"></td>
+						<td class="tab2">Aシリーズ</td>
+						<td>一般的なCPU性能・グラフィックス性能を搭載したCPU</td>
+					</tr>
+					<tr>
+						<td><img src="../../img/windows/cpulogo/amd/sempron-series.png" alt="" width="150px"></td>
+						<td class="tab2">Sempron</td>
+						<td>最大4コア、グラフィックス性能を搭載し、電力消費効率が高いCPU&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td><img src="../../img/windows/cpulogo/amd/Athelon-series.png" alt="" width="150px"></td>
+						<td class="tab2">Athlon</td>
+						<td>4コアを搭載し、標準な価格のCPU</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<p id="page-top"><a href="#wrap"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></p>
+</body>
+
+</html>

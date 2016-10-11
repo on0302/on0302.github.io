@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HOME</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../css/menu.css">
+	<link rel="stylesheet" href="../../css/font.css">
+	<link rel="shortcut icon" href="../../img/favicon.ico">
+	<link rel="stylesheet" href="../../js/fakeLoader.js-master/fakeLoader.css">
+	<link rel="stylesheet" type="text/css" href="../../js/pagePiling.js-master/jquery.pagepiling.css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="../../js/fakeLoader.js-master/fakeLoader.min.js"></script>
+	<script type="text/javascript" src="../../js/pagePiling.js-master/jquery.pagepiling.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.site-box').pagepiling({
+				direction: 'horizontal',
+				sectionsColor: ['#fff'],
+				navigation: {
+					'position': 'right',
+					'tooltips': ['CASE', 'CPU', 'CPU COOLER', 'FAN', 'HARD DRIVE', 'MEMORY', 'MOTHER BOARD', 'OS', 'POWER SUPPLY', 'SOUDN CARD', 'SSD', 'VIDEO CARD']
+				},
+				scrollingSpeed: 200,
+				sectionSelector: '.contents'
+			});
+
+			$("#fakeLoader").fakeLoader({
+				timeToHide: 1100,
+				zindex: 999,
+				spinner: "spinner6",
+				bgColor: "#333",
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<div id="fakeLoader"></div>
+
+	<header id="top-header">
+		<h1 class="logo"><a href="../../home/index.html">GIGABIT</a></h1>
+		<nav id="global-nav">
+			<ul>
+				<li><a href="../../home/index.html" class="menu"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="../home/index.html" class="menu"><i class="fa fa-windows"></i>Windows</a></li>
+				<li><a href="../../mac/home/index.html" class="menu"><i class="fa fa-apple"></i>Mac</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="site-box">
+
+		<div class="contents">
+			<div class="box1" onclick="location.href='../../windows/case/index.html'">
+				<div class="button change-border01">
+					<span class="change-border01__inner">CASE</span>
+				</div>
+				<img src="../../img/windows/pccase-flaticon.png" alt="">
+			</div>
+		</div>
+
+		<div class="contents">
+			<div class="box2" onclick="location.href='../../windows/cpu/index.html'">
+				<div class="button change-border01">
+					<span class="change-border01__inner">CPU</span>
+				</div>
+				<img src="../../img/windows/cpu-flaticon.png" alt="" width="300">
+			</div>
+		</div>
+
+		<div class="contents">
+			<div class="box3" onclick="location.href='../../windows/cpu-cooler/index.html'">
+				<div class="button change-border01">
+					<span class="change-border01__inner">CPU COOLER</span>
+				</div>
+				<img src="../../img/windows/cpucooler-flaticon.png" alt="" width="550">
+			</div>
+		</div>
+
+		<div class="contents">
+			<div class="box4" onclick="location.href='../../windows/fan/index.html'">
+				<div class="button change-border01">
+					<span class="change-border01__inner">FAN</span>
+				</div>
+				<img src="../../img/windows/fan-flaticon.png" alt="" width="600">
+			</div>
+		</div>
+
+		<div class="contents">
+			<div class="box5" onclick="location.href='../../windows/harddrive/index.html'">
+				<div class="button change-border01">
+					<span class="change-border01__inner">HARD DRIVE</span>
+				</div>
+				<img src="../../img/windows/harddrive-flaticon.png" alt="" width="500">
+			</div>
+		</div>
+
+		<div class="contents">
+			<div class="box6" onclick="location.href='../../windows/memory/index.html'">
+				<div class="button change-border01">
+					<span class="change-border01__inner">MEMORY</span>
+				</div>
+				<img src="../../img/windows/memory-flaticon.png" alt="" width="600">
+			</div>
+		</div>
+
+		<div class="contents">
+			<div class="box7" onclick="location.href='../../windows/motherboard/index.html'">
+				<div class="button change-border01">
+					<span class="change-border01__inner">MOTHER BOARD</span>
+				</div>
+				<img src="../../img/windows/motherboard-flaticon.png" alt="" width="500">
+			</div>
+		</div>
+
+		<div class="contents">
+			<div class="box8" onclick="location.href='../../windows/os/index.html'">
+				<div class="button change-border01">
+					<span class="change-border01__inner">OS</span>
+				</div>
+				<h2><i class="fa fa-windows" aria-hidden="true"></i></h2>
+			</div>
+		</div>
+
+		<div class="contents">
+			<div class="box9" onclick="location.href='../../windows/power/index.html'">
+				<div class="button change-border01">
+					<span class="change-border01__inner">POWER SUPPLY</span>
+				</div>
+				<img src="../../img/windows/power-flaticon.png" alt="">
+			</div>
+		</div>
+
+		<div class="contents">
+			<div class="box10" onclick="location.href='../../windows/soundcard/index.html'">
+				<div class="button change-border01">
+					<span class="change-border01__inner">SOUND CARD</span>
+				</div>
+				<img src="../../img/windows/soundcard-flaticon.png" alt="">
+			</div>
+		</div>
+
+		<div class="contents">
+			<div class="box11" onclick="location.href='../../windows/ssd/index.html'">
+				<div class="button change-border01">
+					<span class="change-border01__inner">SSD</span>
+				</div>
+				<img src="../../img/windows/ssd-flaticon.png" alt="" width="500">
+			</div>
+		</div>
+
+		<div class="contents">
+			<div class="box12" onclick="location.href='../../windows/videocard/index.html'">
+				<div class="button change-border01">
+					<span class="change-border01__inner">VIDEO CARD</span>
+				</div>
+				<img src="../../img/windows/videocard-flaticon.png" alt="" width="600">
+			</div>
+		</div>
+
+	</div>
+</body>
+
+</html>
